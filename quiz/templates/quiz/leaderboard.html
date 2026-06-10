@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>成績榜單</title>
+</head>
+<body style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; background-color: #f4f7f6;">
+    
+    <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; color: #333;">🏆 全球高手榜 (Top 5)</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <thead>
+                <tr style="background-color: #f8f9fa;">
+                    <th style="padding: 10px; border-bottom: 2px solid #eee;">玩家</th>
+                    <th style="padding: 10px; border-bottom: 2px solid #eee;">成績</th>
+                    <th style="padding: 10px; border-bottom: 2px solid #eee;">難度</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in top_records %}
+                <tr style="text-align: center;">
+                    <td style="padding: 10px; border-bottom: 1px solid #eee;">{{ record.user.username }}</td>
+                    <td style="padding: 10px; border-bottom: 1px solid #eee;">{{ record.score }}/{{ record.total_questions }}</td>
+                    <td style="padding: 10px; border-bottom: 1px solid #eee;">{{ record.get_difficulty_display }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if user.is_authenticated %}
+            <h3 style="margin-top: 40px; color: #333;">📜 我的歷史紀錄</h3>
+            <div style="max-height: 200px; overflow-y: auto; border: 1px solid #eee; padding: 10px;">
+                {% for record in user_records %}
+                <div style="padding: 8px; border-bottom: 1px solid #f0f0f0;">
+                    {{ record.created_at|date:"m/d H:i" }} - 得分：{{ record.score }} ({{ record.get_difficulty_display }})
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="/" style="color: #2196F3; text-decoration: none;">🏠 返回挑戰大廳</a>
+        </div>
+    </div>
+</body>
+</html>

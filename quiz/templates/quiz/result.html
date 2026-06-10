@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>測驗結果</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; background-color: #f4f7f6;">
+    
+    <div style="background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+        <h2 style="color: #333;">📊 測驗結束！</h2>
+        <p style="font-size: 24px; color: #666; margin-top: 20px;">你的總分是</p>
+        <h1 style="font-size: 60px; color: #2196F3; margin: 10px 0;">{{ score }} <span style="font-size: 30px; color: #999;">/ {{ total }}</span></h1>
+    </div>
+
+    <div style="margin-top: 30px;">
+        {% for item in results_data %}
+            <div style="background-color: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; border-left: 6px solid {% if item.is_correct %}#4CAF50{% else %}#f44336{% endif %}; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                
+                <h4 style="margin: 0 0 10px 0; color: #333;">
+                    {{ forloop.counter }}. {{ item.question }}
+                    <span style="font-size: 12px; background: #eee; padding: 2px 6px; border-radius: 4px; color: #666; margin-left: 8px;">{{ item.difficulty }}</span>
+                </h4>
+                
+                <p style="margin: 5px 0; color: #666; font-size: 16px;">
+                    你的答案：
+                    {% if item.is_correct %}
+                        <span style="color: #4CAF50; font-weight: bold;">{{ item.selected }} (答對 ✔️)</span>
+                    {% else %}
+                        <span style="color: #f44336; font-weight: bold;">{{ item.selected }} (答錯 ❌)</span>
+                    {% endif %}
+                </p>
+                
+                {% if not item.is_correct %}
+                    <p style="margin: 5px 0; color: #333; font-size: 16px; font-weight: bold;">
+                        正確答案：<span style="color: #4CAF50;">{{ item.correct_answer }}</span>
+                    </p>
+                {% endif %}
+                
+            </div>
+        {% endfor %}
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 50px;">
+        <a href="/" style="background-color: #4CAF50; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-size: 18px;">再測驗一次</a>
+    </div>
+
+</body>
+</html>

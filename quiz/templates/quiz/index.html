@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head><meta charset="UTF-8"><title>挑戰大廳</title></head>
+<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; text-align: center; background-color: #f4f7f6;">
+    <div style="background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h1 style="color: #2c3e50;">歡迎來到 鏈結串列 挑戰區 🚀</h1>
+        <div style="margin-top: 20px;">
+    {% if user.is_authenticated %}
+        <p>歡迎, {{ user.username }}! <a href="/logout/">登出</a></p>
+    {% else %}
+        <a href="/login/" style="margin: 0 10px;">登入</a>
+        <a href="/register/" style="margin: 0 10px;">註冊</a>
+    {% endif %}
+
+    
+</div>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+            <a href="/quiz/" style="background-color: #607D8B; color: white; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold;">🎲 綜合測驗</a>
+            <a href="/quiz/?diff=easy" style="background-color: #4CAF50; color: white; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold;">🟢 簡單挑戰</a>
+            <a href="/quiz/?diff=medium" style="background-color: #FFC107; color: #333; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold;">🟡 中等挑戰</a>
+            <a href="/quiz/?diff=hard" style="background-color: #f44336; color: white; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold;">🔴 困難挑戰</a>
+        </div>
+        <div style="margin-top: 30px;"><a href="/leaderboard/" style="color: #555;">🏆 查看排行榜與個人紀錄</a></div>
+    </div>
+</body>
+</html>

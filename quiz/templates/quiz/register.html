@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>註冊帳號</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 400px; margin: 100px auto; text-align: center; background-color: #f4f7f6;">
+    
+    <div style="background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h2 style="color: #2c3e50; margin-top: 0;">📝 註冊新帳號</h2>
+        
+        <form method="POST">
+            {% csrf_token %}
+            
+            <div style="text-align: left; line-height: 1.8; color: #333;">
+                {{ form.as_p }}
+            </div>
+            
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; width: 100%; margin-top: 20px;">確認註冊</button>
+        </form>
+        
+        <div style="margin-top: 20px; font-size: 14px;">
+            <a href="/login/" style="color: #2196F3; text-decoration: none;">已經有帳號了？點此登入</a>
+        </div>
+        <div style="margin-top: 10px; font-size: 14px;">
+            <a href="/" style="color: #999; text-decoration: none;">🏠 回首頁</a>
+        </div>
+    </div>
+
+</body>
+</html>
