@@ -18,3 +18,11 @@ class QuizRecord(models.Model):
     total_questions = models.IntegerField()
     difficulty = models.CharField(max_length=10)
     created_at = models.DateTimeField(auto_now_add=True)
+class UserQuizState(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    question = models.ForeignKey('Question', on_delete=models.CASCADE)
+    is_mastered = models.BooleanField(default=False)  # 是否已學會
+    error_count = models.IntegerField(default=0)     # 錯誤次數
+    
+class Meta:
+        unique_together = ('user', 'question')
