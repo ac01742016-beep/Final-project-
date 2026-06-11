@@ -1,0 +1,924 @@
+[
+{
+    "model": "quiz.question",
+    "pk": 1,
+    "fields": {
+        "text": "「單向鏈結串列」的插入，下列何者較快？",
+        "difficulty": "easy"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 2,
+    "fields": {
+        "text": "「雙向鏈結串列」的插入，下列何者較快？",
+        "difficulty": "easy"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 3,
+    "fields": {
+        "text": "「環狀鏈結串列」的插入，下列何者較快？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 4,
+    "fields": {
+        "text": "下列何者是「單向鏈結串列」的特性？",
+        "difficulty": "easy"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 5,
+    "fields": {
+        "text": "有關「單向鏈結串列」的基本操作，下列何者的時間複雜度為O(1)？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 6,
+    "fields": {
+        "text": "若節點的Python程式為： class Node: 　　def __init__(self, key = None): 　　　　self.key　= key 　　　　self.next = None 則鏈結串列可能是下列何者？",
+        "difficulty": "easy"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 7,
+    "fields": {
+        "text": "若節點的Python 程式為： class Node: 　　def __init__(self, key = None): 　　　　self.key　= key 　　　　self.prev = None 　　　　self.next = None 假設鏈結串列分別為：(1) 單向鏈結串列　(2) 雙向鏈結串列　(3) 環狀鏈結串列。則鏈結串列可能是下列何者？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 8,
+    "fields": {
+        "text": "若想在「單向鏈結串列」中插入一個新的節點，則需改變幾個指標？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 9,
+    "fields": {
+        "text": "若想在「雙向鏈結串列」中插入一個新的節點，則需改變幾個指標？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 10,
+    "fields": {
+        "text": "下列有關Array與Linked List的敘述，何者正確？",
+        "difficulty": "easy"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 11,
+    "fields": {
+        "text": "下列排序演算法中，何者在平均情形下的排序速度最快？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 12,
+    "fields": {
+        "text": "在單向鏈結串列中，若已知要刪除某個節點的「前一個節點（prev_node）」，則執行刪除該節點的動作，其時間複雜度為何？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 13,
+    "fields": {
+        "text": "在 Python 實作鏈結串列時，若我們從串列中移除了某個節點（例如調整了指標，使該節點不再被連結），該節點佔用的記憶體會如何處理？",
+        "difficulty": "hard"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 14,
+    "fields": {
+        "text": "下列哪一種操作，使用「單向鏈結串列（Singly Linked List）」的執行速度會比「陣列（Array）」慢很多？",
+        "difficulty": "medium"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 15,
+    "fields": {
+        "text": "若想要將一個單向鏈結串列進行「反轉（Reverse）」，通常在走訪的過程中，我們最少需要同時維護幾個指標（變數）才能順利改變節點的指向而不遺失後續的資料？",
+        "difficulty": "hard"
+    }
+},
+{
+    "model": "quiz.question",
+    "pk": 16,
+    "fields": {
+        "text": "在一個「雙向鏈結串列」中，假設有一個指標 target 指向我們要刪除的節點。若該節點位於串列的中間（即前後皆有節點），下列哪一段 Python 程式碼能「正確且完整」地將該節點從串列中移除，並維持鏈結關係？",
+        "difficulty": "hard"
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 1,
+    "fields": {
+        "question": 1,
+        "text": "插在最前面",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 2,
+    "fields": {
+        "question": 1,
+        "text": "插在最後面",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 3,
+    "fields": {
+        "question": 1,
+        "text": "插在最前面或最後面會一樣快",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 4,
+    "fields": {
+        "question": 2,
+        "text": "插在最前面",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 5,
+    "fields": {
+        "question": 2,
+        "text": "插在最後面",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 6,
+    "fields": {
+        "question": 2,
+        "text": "插在最前面或最後面會一樣快",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 7,
+    "fields": {
+        "question": 3,
+        "text": "插在最前面",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 8,
+    "fields": {
+        "question": 3,
+        "text": "插在最後面",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 9,
+    "fields": {
+        "question": 3,
+        "text": "插在最前面或最後面會一樣快",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 10,
+    "fields": {
+        "question": 4,
+        "text": "搜尋某一筆資料的時間複雜度為O(1)",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 11,
+    "fields": {
+        "question": 4,
+        "text": "每個節點都有一個指標指向前一個節點",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 12,
+    "fields": {
+        "question": 4,
+        "text": "每個節點都有一個指標指向後一個節點",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 13,
+    "fields": {
+        "question": 4,
+        "text": "走訪是可以從前面往後面，也可以從後面往前面",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 14,
+    "fields": {
+        "question": 5,
+        "text": "搜尋某單筆資料",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 15,
+    "fields": {
+        "question": 5,
+        "text": "在最前面插入一筆資料",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 16,
+    "fields": {
+        "question": 5,
+        "text": "在最後面插入一筆資料",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 17,
+    "fields": {
+        "question": 5,
+        "text": "在最後面刪除一筆資料",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 18,
+    "fields": {
+        "question": 6,
+        "text": "單向鏈結串列",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 19,
+    "fields": {
+        "question": 6,
+        "text": "雙向鏈結串列",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 20,
+    "fields": {
+        "question": 6,
+        "text": "環狀鏈結串列",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 21,
+    "fields": {
+        "question": 6,
+        "text": "以上皆非",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 22,
+    "fields": {
+        "question": 7,
+        "text": "1或2",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 23,
+    "fields": {
+        "question": 7,
+        "text": "1或3",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 24,
+    "fields": {
+        "question": 7,
+        "text": "2或3",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 25,
+    "fields": {
+        "question": 7,
+        "text": "1、2或3",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 26,
+    "fields": {
+        "question": 7,
+        "text": "以上皆非",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 27,
+    "fields": {
+        "question": 8,
+        "text": "1",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 28,
+    "fields": {
+        "question": 8,
+        "text": "2",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 29,
+    "fields": {
+        "question": 8,
+        "text": "3",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 30,
+    "fields": {
+        "question": 8,
+        "text": "4",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 31,
+    "fields": {
+        "question": 8,
+        "text": "以上皆非",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 32,
+    "fields": {
+        "question": 9,
+        "text": "1",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 33,
+    "fields": {
+        "question": 9,
+        "text": "2",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 34,
+    "fields": {
+        "question": 9,
+        "text": "3",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 35,
+    "fields": {
+        "question": 9,
+        "text": "4",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 36,
+    "fields": {
+        "question": 9,
+        "text": "以上皆非",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 37,
+    "fields": {
+        "question": 10,
+        "text": "Linked List的優點是可以直接存取任何一個成員，所以存取速度快",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 38,
+    "fields": {
+        "question": 10,
+        "text": "Array可以用來模擬Linked List，Linked List也可以用來模擬Array",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 39,
+    "fields": {
+        "question": 10,
+        "text": "Linked List的好處是只要宣告指標變數即可，要使用空間時再向系統要求所需空間，所以不會浪費",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 40,
+    "fields": {
+        "question": 10,
+        "text": "Array的優點是Insert、Delete時不需要搬移大量的成員，因此處理較為快速",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 41,
+    "fields": {
+        "question": 11,
+        "text": "泡沫排序",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 42,
+    "fields": {
+        "question": 11,
+        "text": "插入排序",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 43,
+    "fields": {
+        "question": 11,
+        "text": "合併排序",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 44,
+    "fields": {
+        "question": 11,
+        "text": "快速排序",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 45,
+    "fields": {
+        "question": 11,
+        "text": "桶子排序",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 46,
+    "fields": {
+        "question": 12,
+        "text": "O(1)",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 47,
+    "fields": {
+        "question": 12,
+        "text": "O(n)",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 48,
+    "fields": {
+        "question": 12,
+        "text": "O(log n)",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 49,
+    "fields": {
+        "question": 12,
+        "text": "O(n^2)",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 50,
+    "fields": {
+        "question": 13,
+        "text": "必須手動呼叫 或 來釋放記憶體，否則會造成記憶體洩漏 (Memory Leak)。",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 51,
+    "fields": {
+        "question": 13,
+        "text": "Python 的垃圾回收機制 (Garbage Collection) 會自動判定該物件不再被參考 (unreferenced)，並自動回收其記憶體。",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 52,
+    "fields": {
+        "question": 13,
+        "text": "該節點會永久保留在記憶體中，直到整個 Django 伺服器關閉。",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 53,
+    "fields": {
+        "question": 13,
+        "text": "系統會立刻引發記憶體錯誤 (MemoryError) 異常。",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 54,
+    "fields": {
+        "question": 14,
+        "text": "在已知前一個節點位置的情況下，插入一個新節點",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 55,
+    "fields": {
+        "question": 14,
+        "text": "讀取結構中第n個位置的資料（例如：直接讀取第 500 筆資料）",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 56,
+    "fields": {
+        "question": 14,
+        "text": "在資料結構的最前面（Head）新增一筆資料",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 57,
+    "fields": {
+        "question": 14,
+        "text": "刪除資料結構中最前面的第一筆資料",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 58,
+    "fields": {
+        "question": 15,
+        "text": "1個（只需要 current）",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 59,
+    "fields": {
+        "question": 15,
+        "text": "2個（需要 current, next）",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 60,
+    "fields": {
+        "question": 15,
+        "text": "3個（需要 prev, current, next）",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 61,
+    "fields": {
+        "question": 15,
+        "text": "4個（需要 head, prev, current, next）",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 62,
+    "fields": {
+        "question": 16,
+        "text": "target.prev.next = target.next",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 63,
+    "fields": {
+        "question": 16,
+        "text": "target.next.prev = target.prev",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 64,
+    "fields": {
+        "question": 16,
+        "text": "target.prev.next = target.next 且 target.next.prev = target.prev",
+        "is_correct": true
+    }
+},
+{
+    "model": "quiz.choice",
+    "pk": 65,
+    "fields": {
+        "question": 16,
+        "text": "target.next = None 且 target.prev = None",
+        "is_correct": false
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 0,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:11:47.841Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 0,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:11:55.638Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "score": 3,
+        "total_questions": 15,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:18:34.628Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 0,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:22:25.625Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "score": 4,
+        "total_questions": 15,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:24:54.298Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "score": 1,
+        "total_questions": 1,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:36:05.966Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "score": 1,
+        "total_questions": 1,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:37:04.160Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 0,
+        "difficulty": "easy",
+        "created_at": "2026-06-10T19:39:26.630Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "score": 4,
+        "total_questions": 15,
+        "difficulty": "",
+        "created_at": "2026-06-10T19:50:32.738Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "score": 1,
+        "total_questions": 2,
+        "difficulty": "hard",
+        "created_at": "2026-06-10T19:51:56.206Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 11,
+    "fields": {
+        "user": 1,
+        "score": 1,
+        "total_questions": 15,
+        "difficulty": "",
+        "created_at": "2026-06-10T19:58:40.980Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 12,
+    "fields": {
+        "user": 4,
+        "score": 4,
+        "total_questions": 15,
+        "difficulty": "",
+        "created_at": "2026-06-10T20:06:28.927Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 13,
+    "fields": {
+        "user": 1,
+        "score": 1,
+        "total_questions": 5,
+        "difficulty": "",
+        "created_at": "2026-06-10T20:12:39.283Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 14,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 15,
+        "difficulty": "all",
+        "created_at": "2026-06-10T20:14:01.930Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 15,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 8,
+        "difficulty": "medium",
+        "created_at": "2026-06-10T20:14:06.254Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 16,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 15,
+        "difficulty": "all",
+        "created_at": "2026-06-10T20:15:24.285Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 17,
+    "fields": {
+        "user": 1,
+        "score": 3,
+        "total_questions": 15,
+        "difficulty": "all",
+        "created_at": "2026-06-10T20:15:37.304Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 18,
+    "fields": {
+        "user": 1,
+        "score": 3,
+        "total_questions": 15,
+        "difficulty": "all",
+        "created_at": "2026-06-10T20:16:10.474Z"
+    }
+},
+{
+    "model": "quiz.quizrecord",
+    "pk": 19,
+    "fields": {
+        "user": 1,
+        "score": 0,
+        "total_questions": 16,
+        "difficulty": "all",
+        "created_at": "2026-06-10T20:57:39.265Z"
+    }
+}
+]
