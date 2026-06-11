@@ -14,6 +14,7 @@ python -m pip install -r requirements.txt
 
 # 2. 清除舊有資料庫 (若有) 並建立全新資料庫結構
 python manage.py makemigrations
+
 python manage.py migrate
 
 # 3. 匯入題庫 (已過濾掉成績紀錄，確保匯入無外鍵衝突)
