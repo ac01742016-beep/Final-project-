@@ -4,6 +4,7 @@
 
 ### 第一步：環境準備
 請確保已安裝 Python 3.x，並在終端機 (CMD/Terminal) 進入本專案根目錄 (與 `manage.py` 同層)。
+如沒有請 winget install Python.Python.3.12
 
 ### 第二步：一鍵部署與自動化建置
 請在終端機依序執行以下指令：
